@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro Team Store</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url('peakpx1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+        }
+        button {
+            background: #00f7ff;
+            border: none;
+            padding: 10px 25px;
+            color: black;
+            font-size: 1em;
+            font-weight: bold;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #0097A7;
+            color: white;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin: auto;
+            width: 90%;
+            max-width: 1500px;
+        }
+        .product-card {
+            background: rgba(55, 71, 79, 0.9);
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+            display: flex;
+            height: 400px;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .product-card img {
+            width: 100%;
+            height: 150px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        .product-card h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .product-card p {
+            font-size: 0.9em;
+            color: #ddd;
+            margin-bottom: 15px;
+            position: absolute;
+            bottom: 60px;
+            width: 100%;
+            text-align: center;
+        }
+        .product-card button {
+            margin-top: auto;
+            align-self: center;
+        }
+        @media (max-width: 768px) {
+            .product-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+            .product-card {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="logo">TECH GO</h2>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#Services">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="login.html">
+                <button class="login-nav">Login</button>
+            </a>
+        </nav>
+    </header>
+    
+    <!-- Card Start -->
+    <div class="product-grid">
+        <!-- Product Card 1.1 -->
+        <div class="product-card">
+          <img src="photos/5c5cfa02-7b4d-4cc5-9066-a72bea05fc05.jpeg" alt="sensor">
+          <h3>Electrec Microphone Amplifier</h3>
+          <p class="price">180.00 EGP</p>
+          <a href="index 1 wepsites by Mustafa/Electret Microphone Amplifier.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.2 -->
+        <div class="product-card">
+          <img src="photos/WhatsApp Image 2024-12-13 at 8.23.41 PM (1).jpeg" alt="sensor">
+          <h3>Gas Sensor</h3>
+          <p class="price">300.00 EGP</p><a href="index 1 wepsites by Mustafa/Gas Sensor.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.3-->
+        <div class="product-card">
+          <img src="photos/8f4d69ff-180a-49e2-a33c-a29d187d1ec6.jpeg" alt="sensor">
+          <h3>Force sensitive Resistor Sensor</h3>
+          <p class="price">710.00 EGP</p><a href="index 1 wepsites by Mustafa/Force sensitive Resistor Sensor.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.4 -->
+        <div class="product-card">
+          <img src="photos/Ultrasonic Distance Sensor with Python and the micro.jpg" alt="sensor">
+          <h3>Ultrasonic Distance Sensor</h3>
+          <p class="price">600.00EGP</p><a href="index 1 wepsites by Mustafa/Ultrasonic Distance Sensor.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.5 -->
+        <div class="product-card">
+          <img src="photos/WhatsApp Image 2024-12-13 at 11.01.40 PM (1).jpeg" alt="sensor">
+          <h3>KY-015 DHT 11 Temperature Sensor </h3>
+          <p class="price">150.00EGP</p><a href="index 1 wepsites by Mustafa/KY-015 DHT 11 Temperature Sensor.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.6 -->
+        <div class="product-card">
+          <img src="photos/WhatsApp Image 2024-12-13 at 11.01.40 PM.jpeg" alt="sensor">
+          <h3>Rp-c7.6-st Thin Film Pressure Sensor</h3>
+          <p class="price"> 100.00 EGP </p><a href="index 1 wepsites by Mustafa/Rp-c7.6-st Thin Film Pressure Sensor.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.7 -->
+        <div class="product-card">
+          <img src=" photos/86077b44-db9a-407f-87c2-cae43fe0b883.jpeg" alt="motor">
+          <h3>Frameless FM 2506 motor</h3>
+          <p class="price">1,600.00EGP </p><a href="index 1 wepsites by Mustafa/Frameless FM 2506 motor.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.8 -->
+        <div class="product-card">
+          <img src="photos/d62b842e-092b-4b14-817c-c6b7eafb3a06.jpeg" alt="motor">
+          <h3>JKM NEMA17 Hybride stepper Motor 2 Phase</h3>
+          <p class="price">3,000.00 EGP</p><a href="index 1 wepsites by Mustafa/JKM NEMA17 Hybride stepper Motor 2 Phase.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.9 -->
+        <div class="product-card">
+          <img src="photos/9155d09c-1af1-4e7f-937f-4790c4d5ad1b.jpeg" alt="motor">
+          <h3>5V 4- Phase Geared stepper motor</h3>
+          <p class="price"> 500.00 EGP </p><a href="index 1 wepsites by Mustafa/5V 4- Phase Geared stepper motor.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.10 -->
+        <div class="product-card">
+          <img src="photos/9b115d10-7522-4be7-985a-0e011e4657b9.jpeg"alt="motor">
+          <h3>2231 swiss maxon coreless motor</h3>
+          <p class="price">1000.00 EGP </p><a href="index 1 wepsites by Mustafa/2231 swiss maxon coreless motor.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.11 -->
+        <div class="product-card">
+          <img src="photos/79164483-ee7a-46fb-915c-e3367eb8c98e.jpeg" alt="Robotic">
+          <h3>2 DOF Robot Arm with Gripper</h3>
+          <p class="price"> 1,100.00 EGP</p><a href="index 1 wepsites by Mustafa/2 DOF Robot Arm with Gripper.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.12 -->
+        <div class="product-card">
+          <img src="photos/26ab4789-4c11-4074-98f3-c968f6c8cbe5.jpeg" alt="Robotic">
+          <h3>Servo Pan Title Bracket Kit Aluminum</h3>
+          <p class="price">190.00 EGP </p><a href="index 1 wepsites by Mustafa/Servo Pan Title Bracket Kit Aluminum.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.13 -->
+        <div class="product-card">
+          <img src="photos/e8a83ad9-af47-4173-9cf4-b182a97dd238.jpeg" alt="motor">
+          <h3>Mini Vibration Motor </h3>
+          <p class="price"> 50.00 EGP</p><a href="index 1 wepsites by Mustafa/Mini Vibration Motor.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 1.14 -->
+        <div class="product-card">
+          <img src="photos/103f2f38-bc93-4138-925f-83d18835f7b7.jpeg" alt="motor">
+          <h3> DC Geared Motors</h3>
+          <p class="price">40.00 EGP</p><a href="index 1 wepsites by Mustafa/DC Geared Motors.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.1 -->
+        <div class="product-card">
+          <img src="photos/WhatsApp Image 2024-12-12 at 2.20.26 PM.jpeg" alt="board">
+          <h3>Arduino Uno R3-Clone</h3>
+          <p class="price">500.00 EGP</p><a href="index 2 wepsites by Mustafa/Arduino Uno R3-Clone.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.2 -->
+        <div class="product-card">
+          <img src="photos/arduino-pro-mini-2-1-300x300.jpg" alt="board">
+          <h3>Arduino Pro Mini</h3>
+          <p class="price">420.00 EGP</p><a href="index 2 wepsites by Mustafa/Arduino Pro Mini.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.3 -->
+        <div class="product-card">
+          <img src="photos/590e7cfb-3be5-4c2d-9a2f-df2f51166be8.jpeg" alt="board">
+          <h3>Raspberry Pi Pico RP2020</h3>
+          <p class="price">860.00 EGP</p><a href="index 2 wepsites by Mustafa/Raspberry Pi Pico RP2020.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.4 -->
+        <div class="product-card">
+          <img src="photos/7968590b-6518-4da8-8399-1cfdad38cf6d.jpeg" alt="board">
+          <h3>Joystick Shield for Arduino</h3>
+          <p class="price">190.00EGP</p><a href="index 2 wepsites by Mustafa/Joystick Shield for Arduino.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.5 -->
+        <div class="product-card">
+          <img src="photos/Mini Breadboard 400 PIN With 4 Power Rails For Jumper Cable.jpg" alt="board">
+          <h3>Mini Breadboard 400 PIN</h3>
+          <p class="price">300.00EGP</p><a href="index 2 wepsites by Mustafa/Mini Breadboard 400 PIN.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.6 -->
+        <div class="product-card">
+          <img src="photos/5058743f-d39d-4e96-b28a-84d1a19009ac.jpeg" alt="board">
+          <h3>ST-LINK V2 STM8 / STM32 Programmer</h3>
+          <p class="price"> 1600.00 EGP </p><a href="index 2 wepsites by Mustafa/ST-LINK V2 STM8  STM32 Programmer.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.7 -->
+        <div class="product-card">
+          <img src="photos/Beginners Guide to Arduino Nano Pinout and Specs(Explained).jpg" alt="board">
+          <h3>Arduino Nano</h3>
+          <p class="price">5000.00EGP </p><a href="index 2 wepsites by Mustafa/Arduino Nano.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.8 -->
+        <div class="product-card">
+          <img src="photos/Microprocessors.jpg" alt="Microprocessor">
+          <h3>Microprocessor</h3>
+          <p class="price">1000.00 EGP</p><a href="index 2 wepsites by Mustafa/Microprocessor.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.9 -->
+        <div class="product-card">
+          <img src="photos/Basic Electronic Components Used in Circuits.jpg" alt="Electronic Components">
+          <h3>Basic Electronic Components Used in Circuits</h3>
+          <p class="price"> 1500.00 EGP </p><a href="index 2 wepsites by Mustafa/Basic Electronic Components Used in Circuits.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.10 -->
+        <div class="product-card">
+          <img src="photos/USB 3.1 Type-C Cable Test Board 24 PIN Type-C Female Plug Jack to DIP.jpg"alt="board">
+          <h3>USB 3.1 Type-C Cable Test Board 24 PIN Type-C Female Plug Jack to DIP</h3>
+          <p class="price">1000.00 EGP </p><a href="index 2 wepsites by Mustafa/USB 3.1 Type-C Cable Test Board 24 PIN Type-C Female Plug Jack to DIP.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.11 -->
+        <div class="product-card">
+          <img src="photos/03b2f0d9-3b77-4202-ab5c-d88f98664010.jpeg" alt="board">
+          <h3>Sipeed Maixduino Kit RISC-V</h3>
+          <p class="price"> 3,000.00 EGP</p><a href="index 2 wepsites by Mustafa/Sipeed Maixduino Kit RISC-V.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.12 -->
+        <div class="product-card">
+          <img src="photos/ATMEGA8515-16PU Microcontroller 4.5V~5.5V AVR 16MHz 35 PDIP-40.jpg" alt="Microcontroller">
+          <h3>ATMEGA8515-16PU Microcontroller 4.5V~5.5V AVR 16MHz 35 PDIP-40</h3>
+          <p class="price">500.00 EGP </p><a href="index 2 wepsites by Mustafa/ATMEGA8515-16PU Microcontroller 4.5V~5.5V AVR 16MHz 35 PDIP-40.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.13 -->
+        <div class="product-card">
+          <img src="photos/WhatsApp Image 2024-12-12 at 2.20.25 PM (1).jpeg" alt="wifi">
+          <h3>ESP-12E-Wifi module </h3>
+          <p class="price"> 250.00 EGP</p><a href="index 2 wepsites by Mustafa/ESP-12E-Wifi module .html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.14 -->
+        <div class="product-card">
+          <img src=" photos/WhatsApp Image 2024-12-12 at 2.20.25 PM.jpeg" alt="Raspberry pi">
+          <h3> Raspberry pi CM4</h3>
+          <p class="price">2,100.00 EGP</p><a href="index 2 wepsites by Mustafa/Raspberry pi CM4.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 2.15 -->
+        <div class="product-card">
+          <img src="photos/WhatsApp Image 2024-12-13 at 8.23.41 PM.jpeg" alt="Delay">
+          <h3>Delay Real-time </h3>
+          <p class="price">1,500.00 EGP</p><a href="index 2 wepsites by Mustafa/Delay Real-time .html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+       <!-- Product Card 3.1 -->
+       <div class="product-card">
+          <img src="photos/537a0ae4-f831-45ce-b0ba-ef5eac7e0263.jpeg" alt="Wireless">
+          <h3>2.4GHz Transceiver nRF 24L01 Wireless</h3>
+          <p class="price">80.00 EGP</p><a href="index 3/2.4GHz Transceiver nRF 24L01 Wireless.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 3.2 -->
+        <div class="product-card">
+          <img src="photos/0b2ce9d3-b4e4-476e-8dd6-1912136e1a63.jpeg" alt="Wireless">
+          <h3>RF Kit 433 Mhz Wireless</h3>
+          <p class="price">100.00 EGP</p><a href="index 3/RF Kit 433 Mhz Wireless .html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 3.3-->
+        <div class="product-card">
+          <img src="photos/36ae0eac-be3f-4888-a2be-aa418468ea0a.jpeg" alt="Wireless">
+          <h3>GSM-GPRS Arduino SIM900</h3>
+          <p class="price">900.00 EGP</p><a href="index 3/GSM-GPRS Arduino SIM900 900.00 EGP.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 3.4 -->
+        <div class="product-card">
+          <img src="photos/0a188dbc-01e3-499c-aa5b-09b9ab826af3.jpeg" alt="switch">
+          <h3>On/Off Rocker Switch</h3>
+          <p class="price">50.00EGP</p><a href="index 3/OnOff Rocker Switch.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 3.5 -->
+        <div class="product-card">
+          <img src=" photos/0f4fe166-b4e2-4695-9ccf-e809473275b2.jpeg" alt="switch">
+          <h3>Emergency Stop Switch</h3>
+          <p class="price">100.00EGP</p><a href="index 3/emarg stop.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 3.6 -->
+        <div class="product-card">
+          <img src="photos/d83e5f0b-8472-4400-8b91-fdc90762ed88.jpeg" alt="switch">
+          <h3>On/Off Rocker Switch</h3>
+          <p class="price"> 10.00 EGP </p><a href="index 3/OnOff Rocker Switch.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 3.7 -->
+        <div class="product-card">
+          <img src="photos/de82fc65-0690-49e1-abdc-fdda4fcfce9c.jpeg" alt="switch">
+          <h3>Limit Switch Short Lever</h3>
+          <p class="price">60.00EGP </p><a href="index 3/Limit Switch Short Lever.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 3.8 -->
+        <div class="product-card">
+          <img src="photos/5b58a0fb-7c66-429c-ac79-8821fa68393e.jpeg" alt="buzzer">
+          <h3>Siren Alarm (Loud Voice - 100dBA ) 24V</h3>
+          <p class="price">200.00 EGP</p><a href="index 3/S A loud voice.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 3.9 -->
+        <div class="product-card">
+          <img src="photos/1004d627-4675-4614-aebe-8be232618703.jpeg" alt="LED">
+          <h3>LED KIT (5 colors-10 Pieces)</h3>
+          <p class="price"> 10.00 EGP </p><a href="index 3/LED KIT (5 colors-10 Pieces).html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 3.10 -->
+        <div class="product-card">
+          <img src="photos/09857286-f902-48b4-a0ed-be9a5dcbfbcc.jpeg"alt="LED">
+          <h3>Infrared Transmitter and Reciever Kit</h3>
+          <p class="price">20.00 EGP </p><a href="index 3/Infrared Transmitter and Reciever Kit.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 3.11 -->
+        <div class="product-card">
+          <img src=" photos/460d3718-62e5-4531-a298-8b55c3244674.jpeg" alt="IC">
+          <h3>74HC00N (Quad 2-Input NAND Gate)</h3>
+          <p class="price"> 20.00 EGP</p><a href="index 3/74HC00N (Quad 2-Input NAND Gate).html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 3.12 -->
+        <div class="product-card">
+          <img src="photos/a2b66e63-0c11-45a2-9990-2ab8cf5544df.jpeg" alt="IC">
+          <h3>74HC04D (Hex Inverter)</h3>
+          <p class="price">20.00 EGP </p><a href="index 3/74HC04D (Hex Inverter).html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div>
+        <!-- Product Card 3.13 -->
+        <div class="product-card">
+          <img src="photos/4dbe2a8f-3f57-4ce9-8e33-479fffac5266.jpeg" alt="IC">
+          <h3>74HC154 (4-to-16 Decoder/Demultiplexer) </h3>
+          <p class="price"> 50.00 EGP</p><a href="index 3/Demultiplexer).html">
+          <button class="add-to-cart">BUY NOW</button></a>
+        </div> 
+        <!-- Product Card 4.1 -->
+      <div class="product-card">
+          <img src="photos/TP5100 Lithium Battery Charger.jpg" alt="Battery">
+          <h3>TP5100 Lithium Battery Charger</h3>
+          <p class="price">300.00 EGP</p><a href="index 4/TP5100 Lithium Battery Charger.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.2 -->
+      <div class="product-card">
+          <img src="photos/Triple Channel 18650 Lithium Battery Charger Module 3.7v 3A.jpg" alt="Battery">
+          <h3>Triple Channel 18650 Lithium Battery Charger Module 3.7v 3A</h3>
+          <p class="price">200.00 EGP</p><a href="index 4/Triple Channel 18650 Lithium Battery Charger Module 3.7v 3A.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.3 -->
+      <div class="product-card">
+          <img src="photos/Ultracell Lead Acid Battery (UL26-12) 12V 26A.jpg" alt="Battery">
+          <h3>Ultracell Lead Acid Battery (UL26-12) 12V 26A</h3>
+          <p class="price">1000.00 EGP</p><a href="index 4/Ultracell Lead Acid Battery (UL26-12) 12V 26A.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.4 -->
+      <div class="product-card">
+          <img src="photos/Arduino Li-ion Battery Charging.jpg" alt="Battery">
+          <h3>Arduino Li-ion Battery Charging</h3>
+          <p class="price">250.00EGP</p><a href="index 4/Arduino Li-ion Battery Charging.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.5 -->
+      <div class="product-card">
+          <img src="photos/2020-12-17-17-44-22-300x300.jpg" alt="Converter">
+          <h3>DC to DC Converter (Step Down from 48V to 12V 30A) Waterproof 360W</h3>
+          <p class="price">2,300.00EGP</p><a href="index 4/DC to DC Converter (Step Down from 48V to 12V 30A) Waterproof 360W.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.6 -->
+      <div class="product-card">
+          <img src="photos/7303_grobo-300x300.jpg" alt="Converter">
+          <h3>SPX3819M5-L-1-2/TR A447 SMD Linear Voltage Regulators (LDO) 500mA 70dB Fixed 1.2V Positive 16V SOT-23-5
+          </h3>
+          <p class="price"> 30.00 EGP </p><a href="index 4/TR A447 SMD Linear Voltage Regulators (LDO) 500mA 70dB Fixed 1.2V Positive 16V SOT-23-5.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.7 -->
+      <div class="product-card">
+          <img src="photos/DC-400W-15A-Boost-LED-8-5.jpg_-300x300.jpg" alt="Converter">
+          <h3>DC-DC Boost Converter Voltage Step Up Module 400W 12A</h3>
+          <p class="price">350.00EGP </p><a href="index 4/DC-DC Boost Converter Voltage Step Up Module 400W 12A.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.8 -->
+      <div class="product-card">
+          <img src="photos/61zFrcGWv3L-300x300.jpg" alt="Gps">
+          <h3>Heltec CubeCell GPS-6502 HTCC-AB02S LoRa 868 MHz - Development board with GPS</h3>
+          <p class="price">2,200.00 EGP</p><a href="index 4/Heltec CubeCell GPS-6502 HTCC-AB02S LoRa 868 MHz - Development board with GPS.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.9 -->
+      <div class="product-card">
+          <img src="photos/im.jpg" alt="Voltage">
+          <h3>Negative Voltage Regulator 18V-7918</h3>
+          <p class="price"> 7.00 EGP </p><a href="index 4/Negative Voltage Regulator 18V-7918.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.10 -->
+      <div class="product-card">
+          <img src="photos/46702-300x300.jpg"alt="Regulators">
+          <h3>AMS1117-1.5V SMD Fixed 12V 1.5V 800mA SOT-223 Dropout Regulators</h3>
+          <p class="price">5.00 EGP </p><a href="index 4/AMS1117-1.5V SMD Fixed 12V 1.5V 800mA SOT-223 Dropout Regulators.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.11 -->
+      <div class="product-card">
+          <img src="photos/24V 6S-4P+BMS 8800mAh Rechargeable 18650 Li-ion Battery Pack.jpg" alt="Voltage Regulators">
+          <h3>LD1117AV33 1A Fixed 3.3V Positive 15V TO-220 Linear Voltage Regulators (LDO)</h3>
+          <p class="price"> 30.00 EGP</p><a href="index 4/LD1117AV33 1A Fixed 3.3V Positive 15V TO-220 Linear Voltage Regulators (LDO).html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.12 -->
+      <div class="product-card">
+          <img src="photos/w5500-300x300.jpg" alt="Microcontroller">
+          <h3>ATMEGA8515-16PU Microcontroller 4.5V~5.5V AVR 16MHz 35 PDIP-40</h3>
+          <p class="price">500.00 EGP </p><a href="index 4/ATMEGA8515-16PU Microcontroller 4.5V~5.5V AVR 16MHz 35 PDIP-40.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.13 -->
+      <div class="product-card">
+          <img src="photos/H64a8feeb1bc944c583a54ef4ab666c2cn-300x300.jpg" alt="Battery">
+          <h3>Adjustable Step Up 18650 Li-ion Battery Charger & Discharge HW-357 3.7V 9V 5V</h3>
+          <p class="price">60.00 EGP </p><a href="index 4/Adjustable Step Up  Li-ion Battery Charger  Discharge HW.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.14 -->
+      <div class="product-card">
+          <img src="photos/WhatsApp Image 2024-12-13 at 8.23.37 PM (1).jpeg" alt="Battery">
+          <h3>Arduino Pro Mini 5V 16MHz</h3>
+          <p class="price">300.00 EGP </p><a href="index 4/Arduino Pro Mini 5V 16MHz.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.15 -->
+      <div class="product-card">
+          <img src="photos/SOLAR-PANEL-18V 30V.jpg" alt="Battery">
+          <h3>SOLAR-PANEL-18V 30V</h3>
+          <p class="price">1,050.00 EGP </p><a href="index 4/SOLAR-PANEL-18V 30V.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      <!-- Product Card 4.16 -->
+      <div class="product-card">
+          <img src="photos/IMAX-B6AC-balance-charger--300x300.jpg" alt="Battery">
+          <h3>IMAX B6AC Balance Charger/Discharger 80W</h3>
+          <p class="price">2,500.00 EGP </p><a href="index 4/Discharger 80W.html">
+          <button class="add-to-cart">BUY NOW</button></a>
+      </div>
+      </div>
+      <!-- Card End -->
+  
+</body>
+</html>
